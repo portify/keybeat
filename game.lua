@@ -42,7 +42,7 @@ function mt.__index:__init(song)
     love.graphics.newFont("assets/fonts/Montserrat-Regular.otf", 96)
 
   self:calculate_keyboard_pos()
-  -- self:seek(50)
+  self:seek(90)
 end
 
 function mt.__index:seek(beat)

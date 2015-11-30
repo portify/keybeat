@@ -1,8 +1,18 @@
 local game = require("game")
 local inst
 
-function love.load()
-end
+love.errhand = require "err"
+
+-- local function die(n)
+--   -- local n = (nil)[3]
+--   if n == 2000 then require("folder.newfile") end
+--   return die(n + 1)
+-- end
+--
+-- function love.load()
+--   local x = 3
+--   die(0)
+-- end
 
 function love.resize()
   if inst then inst:resize() end
@@ -125,6 +135,26 @@ function love.keypressed(key)
         {96.375, "t"},
         {96.75, "t"},
         {97.375, "r"},
+
+        {98.25, "g"},
+        {98.75, "g"},
+        {99.25, "f"},
+        {100.25, "d"},
+        {101.25, "s"},
+        {102.25, "a"},
+        {103.25, "q"},
+        {103.75, "w"},
+        {104.75, "2"},
+        {105.25, "3"},
+        {106.25, "4"},
+        {107.25, "5"},
+        {108.25, "q"},
+        {108.75, "w"},
+        {109.375, "e"},
+        {110.25, "a"},
+        {110.75, "s"},
+        {111.25, "d"},
+
       }
     })
   end
